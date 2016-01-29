@@ -55,8 +55,8 @@ impl AutoCompleter for ExternalAutoCompleter {
                    } else if cells.len() == 2 {
                        let c = Completion {
                            tpe: self.tpe.to_owned(),
-                           text: cells[0].to_string(),
-                           id: cells[1].to_string(),
+                           text: cells[1].to_string(),
+                           id: cells[0].to_string(),
                        };
                        debug!("Generated completion with text and id: {:?}", c);
                        c
